@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.movietracker.ui.view.search.ListsController"
+            prefWidth="680" prefHeight="480" style="-fx-padding: 12;">
+    <top>
+        <HBox spacing="8">
+            <Label text="Liste:"/>
+            <ComboBox fx:id="typeBox" prefWidth="160"/>
+        </HBox>
+    </top>
+    <center>
+        <ListView fx:id="listView"/>
+    </center>
+</BorderPane>

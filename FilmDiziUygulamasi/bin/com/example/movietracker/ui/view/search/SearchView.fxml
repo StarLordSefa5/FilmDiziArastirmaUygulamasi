@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.movietracker.ui.view.search.SearchController">
+
+    <top>
+        <HBox spacing="8" style="-fx-padding: 12;">
+            <TextField fx:id="queryField" promptText="Film/Dizi ara..." HBox.hgrow="ALWAYS"/>
+            <Button fx:id="searchButton" text="Ara"/>
+            <Button fx:id="listsBtn" text="📚 Listelerim"/>
+        </HBox>
+    </top>
+
+    <center>
+        <ListView fx:id="resultsList"/>
+    </center>
+</BorderPane>
